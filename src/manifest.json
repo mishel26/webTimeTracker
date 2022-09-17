@@ -1,0 +1,34 @@
+{
+    "manifest_version":3,
+    "name":"webtime",
+    "version":"1.5.4",
+    "description":"A time tracker",
+    "icons":{
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    
+    "action":{
+         "default_popup":"popup.html",
+         "default_title":"time consumed",
+         "default_icon" :{
+            "16":"icons/icon16.png"
+         }
+
+    },
+    "permissions":[
+        "tabs",
+        "activeTab",
+        "storage",
+        "webNavigation"
+    ],
+    "background": {
+      "service_worker": "background.js"
+      
+  },
+      
+      "offline_enabled": true
+       
+
+}
